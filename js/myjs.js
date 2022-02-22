@@ -1,19 +1,13 @@
 window.onload = function () {
+   var audio = document.getElementById('bgm');
    //背景音乐自动播放监听
-   document.addEventListener('DOMContentLoaded', function () {
-      function audioAutoPlay() {
-         var audio = document.getElementById('bgm');
-         audio.play();
-         document.addEventListener("WeixinJSBridgeReady", function () {
-            audio.play();
-         }, false);
-      }
-      audioAutoPlay();
-   });
+   document.addEventListener("WeixinJSBridgeReady", function () {
+      audio.play();
+   }, false);
    var music = document.getElementById('muc');
    var mes_bg = document.getElementById('mes-bg');
    var mes_con = document.getElementById('mes-con');
-   var audio = document.getElementsByTagName('audio')[0];
+
    var aaa = document.getElementById('aaa');
    var close = document.getElementById('close');
    var p3_but = document.getElementById('p3-but');
