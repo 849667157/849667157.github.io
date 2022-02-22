@@ -2,8 +2,11 @@ window.onload = function () {
    var audio = document.getElementById('bgm');
    //背景音乐自动播放监听
    document.addEventListener("WeixinJSBridgeReady", function () {
-      audio.play();
+      if (audio.paused) {
+         audio.play();
+      }
    }, false);
+ 
    var music = document.getElementById('muc');
    var mes_bg = document.getElementById('mes-bg');
    var mes_con = document.getElementById('mes-con');
