@@ -208,8 +208,21 @@
     </div>
   </div>
 
-  <audio autoplay="autoplay" loop="loop" src="aduio/bgm.mp3" ></audio>
+  <audio id="bgm" autoplay="autoplay" loop="loop" src="aduio/bgm.mp3"></audio>
+
   <script type="text/javascript">
+    //背景音乐自动播放监听
+    document.addEventListener('DOMContentLoaded', function () {
+      function audioAutoPlay() {
+        var audio = document.getElementById('bgm');
+        audio.play();
+        document.addEventListener("WeixinJSBridgeReady", function () {
+          audio.play();
+        }, false);
+      }
+      audioAutoPlay();
+    });
+
     var t;
     var aaa = document.getElementById('aaa');
     var page2wz = document.getElementById('page2wz');
