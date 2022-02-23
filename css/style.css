@@ -96,7 +96,7 @@
 }
 .page2 img:nth-of-type(1){
 	display: block;
-    width: 80%;   
+	width: 80%;
 }
 .page2 img:nth-of-type(2){
     width: 50%;
@@ -114,7 +114,7 @@
 }
 .aaa{
 	width: 35%;
-	margin: 10% auto;
+	margin: 10% auto 0%;
 	position: relative;
 	padding: 0;
 	opacity: 0;
@@ -321,7 +321,7 @@
 	width: 100%;
 	height: 100%;
 	position: relative;
-	background: url(../images/pg-4.png) no-repeat center center;
+	background: url(../images/bg1.png) no-repeat center center;
     background-size: cover;
 }
 .p4-1{
@@ -380,43 +380,43 @@
 	position: absolute;
 	}
 #squ-1{
-	background: url(../images/zf-1.png) no-repeat center center;
+	background: url(../images/0.png) no-repeat center center;
 	background-size: cover;
 	-webkit-transform:translate3d(0px,0px,25vw);
 }
 #squ-2{
 	-webkit-transform: rotateX(-90deg) translate3d(0px,0px,25vw);
 	transform: rotateX(-90deg) translate3d(0px,0px,25vw);
-	background: url(../images/zft-1.jpg) no-repeat center center;
+	background: url(../images/1.png) no-repeat center center;
 	background-size: cover;
 }
 #squ-3{
 	-webkit-transform: rotateX(180deg) translate3d(0px,0px,25vw);
 	transform: rotateX(180deg) translate3d(0px,0px,25vw);
-	background: url(../images/zft-2.jpg) no-repeat center center;
+	background: url(../images/2.png) no-repeat center center;
 	background-size: cover;
 }
 #squ-4{
 	-webkit-transform: rotateX(-270deg) translate3d(0,0px,25vw);
 	transform: rotateX(-270deg) translate3d(0,0px,25vw);
-	background: url(../images/zft-3.jpg) no-repeat center center;
+	background: url(../images/3.png) no-repeat center center;
 	background-size: cover;
 }
 #squ-5{
 	-webkit-transform: rotateY(-90deg) translate3d(0px,0,25vw);
 	transform: rotateY(-90deg) translate3d(0px,0,25vw);
-	background: url(../images/zft-4.jpg) no-repeat center center;
+	background: url(../images/4.png) no-repeat center center;
 	background-size: cover;
 }
 #squ-6{
 	-webkit-transform: rotateY(90deg) translate3d(0px,0,25vw);
 	transform: rotateY(90deg) translate3d(0px,0,25vw);
-	background: url(../images/zft-5.jpg) no-repeat center center;
+	background: url(../images/5.png) no-repeat center center;
 	background-size: cover;
 }
 .p4-2{
 	position: absolute;
-	top: 65%;
+	top: 50%;
 	left: 0;
 	right: 0;
 	bottom: 0;
@@ -760,4 +760,30 @@
 	-webkit-animation: startplay 1s infinite 1s;
 	-o-animation: startplay 1s infinite 1s;
 	animation: startplay 1s infinite 1s;
+}
+
+.wavy{
+  margin: 30% auto 0;
+  -webkit-box-reflect: below -12px linear-gradient(transparent, rgba(0, 0, 0, 0.2))
+}
+
+.wavy span{
+  position: relative;
+  display: inline-block;
+  color: red;
+  font-size: 100px;
+  animation: animate 1.5s ease-in-out infinite;
+  animation-delay: calc(.1s*var(--i))
+}
+
+@keyframes animate{
+  0%{
+    transform: translateY(0px)
+  }
+  20%{
+    transform: translateY(-24px)
+  }
+  40%, 100%{
+    transform: translateY(0px)
+  }
 }

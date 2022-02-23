@@ -14,11 +14,18 @@
     .spinner {
       width: 20vw;
       height: 20vw;
-      background-color: #67CF22;
+      background-color: pink;
 
       margin: 45vh auto;
       -webkit-animation: rotateplane 1.2s infinite ease-in-out;
       animation: rotateplane 1.2s infinite ease-in-out;
+    }
+    canvas {
+      background-image: url("images/night.png");
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      margin: 0;
+      padding: 0;
     }
 
     @-webkit-keyframes rotateplane {
@@ -87,7 +94,6 @@
         <img class="shu" src="images/shu.png">
         <p>开启礼物</p>
         <img class="down" src="images/down.png">
-
       </div>
     </div>
     <div class="section section2">
@@ -95,7 +101,7 @@
         <img src="images/bg-2-top.png">
         <img id="page2wz" class="bbbplay" src="images/bg-2-wz.png">
         <img class="bg-2-bottom" src="images/bg-2-bottom.png">
-        <div class="aaa " id="aaa"><img class="p2-but" src="images/p2-but.png"></div>
+        <div class="aaa" id="aaa"><img class="p2-but" src="images/p2-but.png"></div>
         <div class="mes-bg" id="mes-bg"></div>
         <div class="mes-con" id="mes-con">
           <img src="images/close.png" class="close" id="close">
@@ -143,7 +149,6 @@
           </div>
         </div>
         <div class="p4-2" id="p4-but">
-
         </div>
       </div>
     </div>
@@ -206,6 +211,22 @@
         <div class="p5-p" id="girl"></div>
       </div>
     </div>
+    <div class="section section6">
+      <!-- <div class="wavy">
+        <span style="--i:1">烟</span>
+        <span style="--i:2">火</span>
+        <span style="--i:3">向</span>
+        <span style="--i:4">星</span>
+        <span style="--i:5">辰</span>
+        <br/>
+        <span style="--i:6">所</span>
+        <span style="--i:7">愿</span>
+        <span style="--i:8">皆</span>
+        <span style="--i:9">成</span>
+        <span style="--i:10">真</span>
+      </div> -->
+      <canvas id="canvas">您的浏览器不支持</canvas>
+    </div>
   </div>
 
   <audio id="bgm" autoplay="autoplay" loop="loop" src="aduio/bgm.mp3"></audio>
@@ -234,7 +255,6 @@
     };
     function page5left() {
       girl.setAttribute('class', 'p5-p');
-
       stars.style.display = "none";
     };
     $(document).ready(function () {
@@ -248,7 +268,6 @@
             case 1:
               break;
             case 2: page2();
-
               break;
             case 3:
               break;
@@ -277,6 +296,7 @@
     });
   </script>
   <script type="text/javascript" src="js/myjs.js"></script>
+  <script type="text/javascript" src="js/firework.js"></script>
 </body>
 
 </html>
