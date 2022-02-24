@@ -416,7 +416,7 @@
 }
 .p4-2{
 	position: absolute;
-	top: 50%;
+	top: 55%;
 	left: 0;
 	right: 0;
 	bottom: 0;
@@ -763,14 +763,15 @@
 }
 
 .wavy{
-  margin: 30% auto 0;
-  -webkit-box-reflect: below -12px linear-gradient(transparent, rgba(0, 0, 0, 0.2))
+  position: absolute;
+  top: 25%;
+  left: 25%;
 }
 
 .wavy span{
   position: relative;
   display: inline-block;
-  color: red;
+  color: #CCCCFF;
   font-size: 100px;
   animation: animate 1.5s ease-in-out infinite;
   animation-delay: calc(.1s*var(--i))
