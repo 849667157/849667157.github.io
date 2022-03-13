@@ -1,9 +1,8 @@
  // mk 如果能做出真正firework减速运动拖尾顶部闪烁效果 那更好
  const canvas = document.getElementById('canvas')
  const ctx = canvas.getContext('2d')
- const canvasWidth = window.innerWidth
- const canvasHeight = window.innerHeight
-
+ const canvasWidth = document.documentElement.clientWidth
+ const canvasHeight = document.documentElement.clientHeight
  let fireworks = [] // 烟花集合
  let particles = [] // 粒子集合
 

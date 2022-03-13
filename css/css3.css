@@ -416,53 +416,53 @@
 }
 @keyframes p5pplay{
 	0%{
-		background: url(../images/girl-1.png) no-repeat center center;
+		background: url(../img/girl-1.png) no-repeat center center;
         background-size: cover;
 	}
 	20%{
-		background: url(../images/girl-2.png) no-repeat center center;
+		background: url(../img/girl-2.png) no-repeat center center;
         background-size: cover;
 	}
 	40%{
-		background: url(../images/girl-3.png) no-repeat center center;
+		background: url(../img/girl-3.png) no-repeat center center;
         background-size: cover;
     }
 	60%{
-		background: url(../images/girl-4.png) no-repeat center center;
+		background: url(../img/girl-4.png) no-repeat center center;
         background-size: cover;
 	}
 	80%{
-		background: url(../images/girl-5.png) no-repeat center center;
+		background: url(../img/girl-5.png) no-repeat center center;
         background-size: cover;
 	}
 	100%{
-		background: url(../images/girl-6.png) no-repeat center center;
+		background: url(../img/girl-6.png) no-repeat center center;
         background-size: cover;
 	}
 }
 @-webkit-keyframes p5pplay{
 	0%{
-		background: url(../images/girl-1.png) no-repeat center center;
+		background: url(../img/girl-1.png) no-repeat center center;
         background-size: cover;
 	}
 	20%{
-		background: url(../images/girl-2.png) no-repeat center center;
+		background: url(../img/girl-2.png) no-repeat center center;
         background-size: cover;
 	}
 	40%{
-		background: url(../images/girl-3.png) no-repeat center center;
+		background: url(../img/girl-3.png) no-repeat center center;
         background-size: cover;
     }
 	60%{
-		background: url(../images/girl-4.png) no-repeat center center;
+		background: url(../img/girl-4.png) no-repeat center center;
         background-size: cover;
 	}
 	80%{
-		background: url(../images/girl-5.png) no-repeat center center;
+		background: url(../img/girl-5.png) no-repeat center center;
         background-size: cover;
 	}
 	100%{
-		background: url(../images/girl-6.png) no-repeat center center;
+		background: url(../img/girl-6.png) no-repeat center center;
         background-size: cover;
 	}
 }
